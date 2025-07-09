@@ -181,6 +181,31 @@
 }
 
 /* ========================================
+   Image Optimizations
+   ======================================== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+picture {
+    display: block;
+}
+
+#header img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.spotlight .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ========================================
    Performance Optimizations
    ======================================== */
 .whatsapp-button,
