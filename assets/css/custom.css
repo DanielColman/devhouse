@@ -56,6 +56,7 @@
     background: rgba(28, 29, 38, 0.95);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
+    transform: translateY(-100%); /* Hidden by default */
 }
 
 #header h1 {
@@ -189,6 +190,14 @@
 }
 
 /* ========================================
+   Pull to Refresh Prevention
+   ======================================== */
+html, body {
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ========================================
    Print Styles
    ======================================== */
 @media print {
@@ -200,4 +209,6 @@
     .whatsapp-button {
         display: none;
     }
+    
+
 } 
