@@ -8,6 +8,7 @@
 .whatsapp-button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     background: #25D366;
     color: white;
@@ -20,6 +21,8 @@
     box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
     border: none;
     cursor: pointer;
+    text-align: center;
+    min-width: fit-content;
 }
 
 .whatsapp-button:hover {
@@ -38,6 +41,11 @@
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+}
+
+.whatsapp-button span {
+    text-align: center;
+    white-space: nowrap;
 }
 
 /* ========================================
