@@ -117,32 +117,8 @@
     // Accessibility Improvements
     // ========================================
     function initAccessibility() {
-        // Add skip link for keyboard navigation
-        const skipLink = document.createElement('a');
-        skipLink.href = '#main-content';
-        skipLink.textContent = 'Skip to main content';
-        skipLink.className = 'skip-link';
-        skipLink.style.cssText = `
-            position: absolute;
-            top: -40px;
-            left: 6px;
-            background: #5B6CFF;
-            color: white;
-            padding: 8px;
-            text-decoration: none;
-            border-radius: 4px;
-            z-index: 1001;
-        `;
-        
-        skipLink.addEventListener('focus', function() {
-            this.style.top = '6px';
-        });
-        
-        skipLink.addEventListener('blur', function() {
-            this.style.top = '-40px';
-        });
-        
-        document.body.insertBefore(skipLink, document.body.firstChild);
+        // Skip link is now handled in CSS for better control
+        // No dynamic creation to avoid scroll issues
     }
 
     // ========================================
