@@ -65,6 +65,8 @@ body, input, select, textarea, button {
     left: 0;
     right: 0;
     z-index: 1000;
+    height: 64px;
+    line-height: 64px;
     background: rgba(28, 29, 38, 0.97);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -119,11 +121,17 @@ body, input, select, textarea, button {
 }
 
 .header-logo {
-    height: 36px;
+    height: 46px;
     width: auto;
     display: block;
     filter: invert(1);
     mix-blend-mode: screen;
+}
+
+#header img.header-logo {
+    height: 46px;
+    width: auto;
+    object-fit: contain;
 }
 
 @media (max-width: 736px) {
@@ -131,8 +139,14 @@ body, input, select, textarea, button {
         width: 220px;
     }
 
-    .header-logo {
-        height: 28px;
+    .header-logo,
+    #header img.header-logo {
+        height: 34px;
+    }
+
+    #header {
+        height: 56px;
+        line-height: 56px;
     }
 }
 
