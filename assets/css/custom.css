@@ -109,6 +109,21 @@ body, input, select, textarea, button {
     align-items: center;
 }
 
+.banner-logo {
+    width: 260px;
+    height: auto;
+    margin: 0 auto 0.5rem;
+    filter: invert(1);
+    mix-blend-mode: screen;
+    display: block;
+}
+
+@media (max-width: 736px) {
+    .banner-logo {
+        width: 180px;
+    }
+}
+
 /* ========================================
    Feature Cards (#one section — teal bg)
    ======================================== */
