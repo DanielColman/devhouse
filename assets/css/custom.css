@@ -94,9 +94,9 @@ body, input, select, textarea, button {
     outline-offset: 2px;
 }
 
-#header img {
-    height: 40px;
-    width: 40px;
+#header img.header-logo {
+    height: 36px;
+    width: auto;
     object-fit: contain;
 }
 
@@ -110,7 +110,7 @@ body, input, select, textarea, button {
 }
 
 .banner-logo {
-    width: 260px;
+    width: 360px;
     height: auto;
     margin: 0 auto 0.5rem;
     filter: invert(1);
@@ -118,9 +118,21 @@ body, input, select, textarea, button {
     display: block;
 }
 
+.header-logo {
+    height: 36px;
+    width: auto;
+    display: block;
+    filter: invert(1);
+    mix-blend-mode: screen;
+}
+
 @media (max-width: 736px) {
     .banner-logo {
-        width: 180px;
+        width: 220px;
+    }
+
+    .header-logo {
+        height: 28px;
     }
 }
 
