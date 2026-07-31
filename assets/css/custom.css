@@ -421,6 +421,24 @@ html, body {
 }
 
 /* ========================================
+   Footer flag
+   ======================================== */
+.footer-flag-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.75rem;
+    padding-bottom: 1rem;
+}
+
+.footer-flag {
+    width: 48px;
+    height: 32px;
+    border-radius: 3px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+/* ========================================
    Print
    ======================================== */
 @media print {
