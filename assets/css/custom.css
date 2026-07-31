@@ -431,8 +431,8 @@ html, body {
 }
 
 .footer-flag {
-    width: 48px;
-    height: 32px;
+    width: 72px;
+    height: auto;
     border-radius: 3px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
     display: block;
