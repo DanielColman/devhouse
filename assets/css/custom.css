@@ -112,27 +112,36 @@ body, input, select, textarea, button {
 }
 
 .banner-logo {
-    width: 340px;
+    width: 360px;
     height: auto;
     margin: 0 auto 0.5rem;
+    filter: invert(1);
+    mix-blend-mode: screen;
     display: block;
-    overflow: visible;
 }
 
 .header-logo {
     height: 46px;
     width: auto;
     display: block;
-    overflow: visible;
+    filter: invert(1);
+    mix-blend-mode: screen;
+}
+
+#header img.header-logo {
+    height: 46px;
+    width: auto;
+    object-fit: contain;
 }
 
 @media (max-width: 736px) {
     .banner-logo {
-        width: 210px;
+        width: 220px;
     }
 
-    .header-logo {
-        height: 32px;
+    .header-logo,
+    #header img.header-logo {
+        height: 34px;
     }
 
     #header {
